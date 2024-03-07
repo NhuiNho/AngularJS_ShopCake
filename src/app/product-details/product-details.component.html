@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-4 p-4 text-center ">
+        <img [src]="productDetail?.imageUrl" width="50%" alt="">
+    </div>
+    <div class="col-md-5 pt-4">
+        <h1>{{productDetail?.productName}}</h1>
+        <div class="crop pt-3 pb-3" [style.width.px]="(productDetail?.starRating!*90)/5">
+            <div style="width: 90px;">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </div>
+        <div class="text-justify">
+        </div>
+        <h3 class="pb-3">Price : {{ productDetail?.price | customCurrency}} </h3>
+        <h3 class="pb-3">InStock: {{ productDetail?.inStock }}</h3>
+        <h5 class="pb-3">Description: {{ productDetail?.description}}</h5>
+        <button class="btn btn-primary" [disabled]="checkInStock()" (click)="Add()">Thêm vào giỏ hàng</button>
+        <br>
+    </div>
+    <div class="col-3 pt-5">
+        <div style="border: 1px solid black;margin-top: 10px;padding: 10px;">
+            <a href="#" style="float: left;">
+                <i class="fas fa-shopping-cart" style="font-size: 50px;"></i>
+            </a>
+            <div class="text-center">
+                {{ itemCount}}
+                <br>
+                Total :
+                {{ itemSum | currency}}
+                <br>
+                <button class="btn btn-primary" style="margin-top: 10px;" routerLink="/cart">View Cart</button>
+            </div>
+        </div>
+    </div>
+</div>

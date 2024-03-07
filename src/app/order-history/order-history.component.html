@@ -1,0 +1,41 @@
+<div class="row mt-3 pl-3 pr-3">
+     <!-- Button trigger modal -->
+     <div class="col-md-6 pt-3 pb-3"></div>
+     <table class="table table-bordered">
+          <thead>
+               <tr class="text-center">
+                    <th rowspan="2" style="text-align: center; vertical-align: middle">
+                         Order Id
+                    </th>
+                    <th colspan="4">Product Details</th>
+                    <th rowspan="2"></th>
+               </tr>
+               <tr class="text-center">
+                    <th>Product</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+               </tr>
+          </thead>
+          <tbody *ngFor="let item of orderList; let i = index" class="text-center">
+               <tr>
+                    <td rowspan="100" style="text-align: center; vertical-align: middle">
+                         #{{ item.id }}
+                    </td>
+                    <th colspan="4">Danh sách sản phẩm</th>
+                    <th rowspan="100" style="text-align: center; vertical-align: middle">
+                         <button type="button" class="btn btn-danger" (click)="cancelOrder(item.id)">Hủy
+                              đơn</button>
+                    </th>
+               </tr>
+               <tr *ngFor="let product of item.products; let j = index">
+                    <td>{{ product.product.productName }}</td>
+                    <td>
+                         <img src="{{ product.product.imageUrl }}" width="50px" alt srcset />
+                    </td>
+                    <td>{{ product.product.price }}</td>
+                    <td>{{ product.quantity }}</td>
+               </tr>
+          </tbody>
+     </table>
+</div>

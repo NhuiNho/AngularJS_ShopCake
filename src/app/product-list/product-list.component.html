@@ -1,0 +1,120 @@
+<div *ngIf="isAdmin()">
+    <!-- <app-product-list [productList]="filterProductList"></app-product-list> -->
+    <div class="row mt-3 pl-3 pr-3">
+        <!-- Button trigger modal -->
+        <div class="col-md-6 pt-3 pb-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modelId">
+                Add new
+            </button>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Image
+                    </th>
+                    <th>Product</th>
+                    <th>Price </th>
+                    <th>inStock</th>
+                    <th>5 Star Rating</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of productList; let i = index">
+                    <td scope="row"><img src="{{item.imageUrl}}" width="50px" alt="" srcset=""> </td>
+                    <td> <a href="" [routerLink]="['/product-details', item.id]">{{item.productName}}</a></td>
+                    <td>{{item.price}}</td>
+                    <td>{{ item.inStock }}</td>
+                    <!-- <td>{{item.starRating}}</td> -->
+                    <td>
+                        <app-star [Rating]="item.starRating" [nameRating]="item.productName"
+                            (outRating)="showRating($event)"></app-star>
+
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-success me-3" data-bs-toggle="modal"
+                            data-bs-target="#modelId" (click)="Edit(i)" (click)="IsUpdate=2;IsAdd=0">Edit</button>
+                        <button type="button" class="btn btn-danger" (click)="Delete(i)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Product</h5>
+                    <button type="button" class="close ms-auto" data-bs-dismiss="modal" aria-label="Close"
+                        (click)="resetForm()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form [formGroup]="formProduct">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Product Name</label>
+                                    <input type="text" [formControl]="formProduct.controls.productName" name="" id=""
+                                        class="form-control" placeholder="" ariadescribedby="helpId" required>
+                                    <!--<small id="helpId" class="text-muted">Help
+    text</small>-->
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Price</label>
+                                    <input type="number" [formControl]="formProduct.controls.price" name="" id=""
+                                        class="form-control" placeholder="" ariadescribedby="helpId" required>
+                                    <!--<small id="helpId" class="text-muted">Help
+                                text</small>-->
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">InStock</label>
+                                    <input type="number" [formControl]="formProduct.controls.inStock" name="" id=""
+                                        class="form-control" placeholder="" ariadescribedby="helpId" required>
+                                    <!--<small id="helpId" class="text-muted">Help
+                                text</small>-->
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="">description</label>
+                                    <textarea type="text" [formControl]="formProduct.controls.description" name="" id=""
+                                        class="form-control" placeholder="" ariadescribedby="helpId"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">picture</label>
+                                    <input type="file" (change)="onChange($event)" name="image" id=""
+                                        class="form-control" placeholder="" aria-describedby="helpId">
+                                    <!--<small id="helpId" class="text-muted">Help
+                                text</small>-->
+                                    <input type="hidden" name="" [formControl]="formProduct.controls.imageUrl">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img [src]="file" width="20%" alt="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" *ngIf="IsAdd==1" (click)="Add()">Save</button>
+                    <button type="button" class="btn btn-primary" *ngIf="IsUpdate==2" (click)="Update()"
+                        (click)="IsAdd=1;IsUpdate=0">Save</button>
+                    <button type="button" class="btn btn-secondary" (click)="IsAdd=1;IsUpdate=0" data-bs-dismiss="modal"
+                        (click)="resetForm()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

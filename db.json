@@ -1,0 +1,291 @@
+{
+  "products": [
+    {
+      "productName": "Bánh mì lúa mạch đen",
+      "price": 22000,
+      "inStock": 5,
+      "description": "Bánh mì đen lúa mạch được làm từ sự kết hợp giữa hạt và bột lúa mạch đen. Hiện nay, có nhiều loại bánh mì đen lúa mạch khác nhau, tùy thuộc vào các công thức kết hợp riêng của từng loại bánh",
+      "starRating": 5,
+      "imageUrl": "./assets/images/1653490183Bánh mì lúa mạch đen.jpg",
+      "id": "d7bc"
+    },
+    {
+      "productName": "Bánh Chiên Kem Custard",
+      "price": 25000,
+      "inStock": 5,
+      "description": "Món kem custard chiên chưa hẳn được nhiều người biết đến. Hôm nay Bách hóa XANH sẽ hướng dẫn các bạn cách làm món kem custard chiên cực kỳ thơm ngon nhé",
+      "starRating": 5,
+      "imageUrl": "./assets/images/1653489653Bánh chiên kem Custard.jpg",
+      "id": "f4dc"
+    },
+    {
+      "productName": "Bánh Chiên Xoan",
+      "price": 22000,
+      "inStock": 5,
+      "description": "Bánh chiên xoắn quẩy này thực ra cũng chỉ có một sự thay đổi nho nhỏ trong thành phần thôi nhưng chính điều này lại làm nên sự khác biệt đấy các bạn ạ!",
+      "starRating": 5,
+      "imageUrl": "./assets/images/1653489816Bánh chiên xoắn.jpg",
+      "id": "5c9c"
+    },
+    {
+      "productName": "Bánh Lớp Sừng Trâu",
+      "price": 15000,
+      "inStock": 5,
+      "description": "Bữa sáng sẽ thật tuyệt vời khi được thưởng thức một chiếc bánh sừng trâu (croissant) trứng muối với lớp vỏ giòn tan cùng phần nhân béo ngậy cực hấp dẫn",
+      "starRating": 5,
+      "imageUrl": "./assets/images/1653489808Bánh lớp sừng trâu.jpg",
+      "id": "333c"
+    },
+    {
+      "productName": "Bánh Pate Chaud",
+      "price": 15000,
+      "inStock": 5,
+      "description": "Bánh Pateso ngàn lớp được biết đến là một món bánh quen thuộc ở Pháp với tên gọi paté chaud",
+      "starRating": 5,
+      "imageUrl": "./assets/images/1653490341Bánh pate chaud.jpg",
+      "id": "93c4"
+    },
+    {
+      "productName": "Bánh Mì Sandwich sữa",
+      "price": 10000,
+      "inStock": 5,
+      "description": "Bánh mì sandwich nhìn cứ tưởng khó nhưng thực tế cách làm lại vô cùng đơn giản. Chỉ với vài nguyên liệu cơ bản là có ngay những lát bánh mì dai mềm, trắng mịn thơm ngon để ăn sáng",
+      "starRating": 5,
+      "imageUrl": "./assets/images/1653490231Bánh mì sandwich sữa.jpg",
+      "id": "b0f5"
+    },
+    {
+      "productName": "Bánh mì xúc xích",
+      "price": 25000,
+      "inStock": 5,
+      "description": "Bánh mì cuộn xúc xích là món bánh cực kỳ lý tưởng và bổ dưỡng cho gia đình bạn vào mỗi buổi sáng. Từng thớ bánh mì dai mềm, thơm béo quyện cùng xúc xích bùi bùi chắc chắn sẽ khiến mọi người thích mê. Vào bếp cùng Điện máy XANH xem ngay 2 công thức sau đây nhé!",
+      "starRating": 5,
+      "imageUrl": "./assets/images/1653490278Bánh mì xúc xích.jpg",
+      "id": "733b"
+    }
+  ],
+  "users": [
+    {
+      "name": "Đặng Châu Trường Phước",
+      "email": "admin@itc.edu.vn",
+      "password": "123456789",
+      "phone": "0856033726",
+      "status": "admin",
+      "id": "1"
+    },
+    {
+      "name": "Đặng Châu Trường Phước",
+      "email": "truongphuoc442001@gmail.com",
+      "password": "12345678",
+      "phone": "0856033726",
+      "status": "user",
+      "id": "b513"
+    },
+    {
+      "name": "Lenching",
+      "email": "ahavyvy@gmail.com",
+      "password": "12345678",
+      "phone": "0981125546",
+      "status": "user",
+      "id": "7207"
+    }
+  ],
+  "carts": [],
+  "orders": [
+    {
+      "id": "5d40",
+      "user": {
+        "name": "Đặng Châu Trường Phước",
+        "email": "truongphuoc442001@gmail.com",
+        "password": "12345678",
+        "phone": "0856033726",
+        "status": "user",
+        "id": "b513"
+      },
+      "products": [
+        {
+          "userId": "b513",
+          "product": {
+            "id": "d7bc",
+            "productName": "Bánh mì lúa mạch đen",
+            "price": 22000,
+            "description": "Bánh mì đen lúa mạch được làm từ sự kết hợp giữa hạt và bột lúa mạch đen. Hiện nay, có nhiều loại bánh mì đen lúa mạch khác nhau, tùy thuộc vào các công thức kết hợp riêng của từng loại bánh",
+            "starRating": 5,
+            "imageUrl": "./assets/images/1653490183Bánh mì lúa mạch đen.jpg"
+          },
+          "quantity": 2,
+          "id": "2a0c"
+        },
+        {
+          "id": "d0fc",
+          "userId": "b513",
+          "product": {
+            "id": "f4dc",
+            "productName": "Bánh Chiên Kem Custard",
+            "price": 25000,
+            "description": "Món kem custard chiên chưa hẳn được nhiều người biết đến. Hôm nay Bách hóa XANH sẽ hướng dẫn các bạn cách làm món kem custard chiên cực kỳ thơm ngon nhé",
+            "starRating": 5,
+            "imageUrl": "./assets/images/1653489653Bánh chiên kem Custard.jpg"
+          },
+          "quantity": 1
+        },
+        {
+          "id": "8400",
+          "userId": "b513",
+          "product": {
+            "id": "5c9c",
+            "productName": "Bánh Chiên Xoan",
+            "price": 22000,
+            "description": "Bánh chiên xoắn quẩy này thực ra cũng chỉ có một sự thay đổi nho nhỏ trong thành phần thôi nhưng chính điều này lại làm nên sự khác biệt đấy các bạn ạ!",
+            "starRating": 5,
+            "imageUrl": "./assets/images/1653489816Bánh chiên xoắn.jpg"
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "ca56",
+      "user": {
+        "name": "Lenching",
+        "email": "ahavyvy@gmail.com",
+        "password": "12345678",
+        "phone": "0981125546",
+        "status": "user",
+        "id": "7207"
+      },
+      "products": [
+        {
+          "id": "ff09",
+          "userId": "7207",
+          "product": {
+            "id": "d7bc",
+            "productName": "Bánh mì lúa mạch đen",
+            "price": 22000,
+            "description": "Bánh mì đen lúa mạch được làm từ sự kết hợp giữa hạt và bột lúa mạch đen. Hiện nay, có nhiều loại bánh mì đen lúa mạch khác nhau, tùy thuộc vào các công thức kết hợp riêng của từng loại bánh",
+            "starRating": 5,
+            "imageUrl": "./assets/images/1653490183Bánh mì lúa mạch đen.jpg"
+          },
+          "quantity": 1
+        },
+        {
+          "id": "0862",
+          "userId": "7207",
+          "product": {
+            "id": "f4dc",
+            "productName": "Bánh Chiên Kem Custard",
+            "price": 25000,
+            "description": "Món kem custard chiên chưa hẳn được nhiều người biết đến. Hôm nay Bách hóa XANH sẽ hướng dẫn các bạn cách làm món kem custard chiên cực kỳ thơm ngon nhé",
+            "starRating": 5,
+            "imageUrl": "./assets/images/1653489653Bánh chiên kem Custard.jpg"
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "ef24",
+      "user": {
+        "name": "Lenching",
+        "email": "ahavyvy@gmail.com",
+        "password": "12345678",
+        "phone": "0981125546",
+        "status": "user",
+        "id": "7207"
+      },
+      "products": [
+        {
+          "id": "6ba2",
+          "userId": "7207",
+          "product": {
+            "id": "5c9c",
+            "productName": "Bánh Chiên Xoan",
+            "price": 22000,
+            "description": "Bánh chiên xoắn quẩy này thực ra cũng chỉ có một sự thay đổi nho nhỏ trong thành phần thôi nhưng chính điều này lại làm nên sự khác biệt đấy các bạn ạ!",
+            "starRating": 5,
+            "imageUrl": "./assets/images/1653489816Bánh chiên xoắn.jpg"
+          },
+          "quantity": 1
+        },
+        {
+          "id": "aeea",
+          "userId": "7207",
+          "product": {
+            "id": "333c",
+            "productName": "Bánh Lớp Sừng Trâu",
+            "price": 15000,
+            "description": "Bữa sáng sẽ thật tuyệt vời khi được thưởng thức một chiếc bánh sừng trâu (croissant) trứng muối với lớp vỏ giòn tan cùng phần nhân béo ngậy cực hấp dẫn",
+            "starRating": 5,
+            "imageUrl": "./assets/images/1653489808Bánh lớp sừng trâu.jpg"
+          },
+          "quantity": 1
+        },
+        {
+          "id": "ffb7",
+          "userId": "7207",
+          "product": {
+            "id": "b0f5",
+            "productName": "Bánh Mì Sandwich sữa",
+            "price": 10000,
+            "description": "Bánh mì sandwich nhìn cứ tưởng khó nhưng thực tế cách làm lại vô cùng đơn giản. Chỉ với vài nguyên liệu cơ bản là có ngay những lát bánh mì dai mềm, trắng mịn thơm ngon để ăn sáng",
+            "starRating": 5,
+            "imageUrl": "./assets/images/1653490231Bánh mì sandwich sữa.jpg"
+          },
+          "quantity": 1
+        },
+        {
+          "id": "19d1",
+          "userId": "7207",
+          "product": {
+            "id": "733b",
+            "productName": "Bánh mì xúc xích",
+            "price": 25000,
+            "description": "Bánh mì cuộn xúc xích là món bánh cực kỳ lý tưởng và bổ dưỡng cho gia đình bạn vào mỗi buổi sáng. Từng thớ bánh mì dai mềm, thơm béo quyện cùng xúc xích bùi bùi chắc chắn sẽ khiến mọi người thích mê. Vào bếp cùng Điện máy XANH xem ngay 2 công thức sau đây nhé!",
+            "starRating": 5,
+            "imageUrl": "./assets/images/1653490278Bánh mì xúc xích.jpg"
+          },
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "f726",
+      "user": {
+        "name": "Đặng Châu Trường Phước",
+        "email": "truongphuoc442001@gmail.com",
+        "password": "12345678",
+        "phone": "0856033726",
+        "status": "user",
+        "id": "b513"
+      },
+      "products": [
+        {
+          "id": "87ed",
+          "userId": "b513",
+          "product": {
+            "id": "d7bc",
+            "productName": "Bánh mì lúa mạch đen",
+            "price": 22000,
+            "description": "Bánh mì đen lúa mạch được làm từ sự kết hợp giữa hạt và bột lúa mạch đen. Hiện nay, có nhiều loại bánh mì đen lúa mạch khác nhau, tùy thuộc vào các công thức kết hợp riêng của từng loại bánh",
+            "starRating": 5,
+            "imageUrl": "./assets/images/1653490183Bánh mì lúa mạch đen.jpg"
+          },
+          "quantity": 1
+        },
+        {
+          "id": "ce7b",
+          "userId": "b513",
+          "product": {
+            "id": "f4dc",
+            "productName": "Bánh Chiên Kem Custard",
+            "price": 25000,
+            "description": "Món kem custard chiên chưa hẳn được nhiều người biết đến. Hôm nay Bách hóa XANH sẽ hướng dẫn các bạn cách làm món kem custard chiên cực kỳ thơm ngon nhé",
+            "starRating": 5,
+            "imageUrl": "./assets/images/1653489653Bánh chiên kem Custard.jpg"
+          },
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
